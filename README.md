@@ -40,3 +40,9 @@ Both licenses permit commercial reuse. Preserve the required notices when reusin
 Citation metadata is provided in [CITATION.cff](CITATION.cff). For a reproducible reference to the formalization, also record the commit SHA you used.
 
 Please report mathematical errors, reproduction failures, or relevant prior work through [GitHub Issues](https://github.com/k8-glitch/mersenne-rigidity/issues), with the theorem or file location and supporting details. Proposed corrections can be submitted as pull requests. Contributions should use the license applicable to the edited files, and substantial AI assistance should be disclosed.
+
+## Automated verification
+
+[Verify Lean proof](https://github.com/k8-glitch/mersenne-rigidity/actions/workflows/verify.yml) runs on changes to the proof, verification script, or workflow, and on pull requests affecting those files. Each run checks the proof with the pinned mathlib revision and checks the reported axioms of the main theorem against `propext`, `Classical.choice`, and `Quot.sound`. The run page provides the execution log and result.
+
+The manuscript carries its original August 26, 2026 date. The repository publication date is November 22, 2026.
