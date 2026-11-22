@@ -1,0 +1,35 @@
+name: Verify Lean proof
+on:
+  push:
+    paths:
+      - MersenneRigidity.lean
+      - verify.sh
+      - .github/workflows/verify.yml
+  pull_request:
+    paths:
+      - MersenneRigidity.lean
+      - verify.sh
+      - .github/workflows/verify.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install elan
+        shell: bash
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check proof and main theorem axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash verify.sh | tee verification.log
+          grep -Fx "'MersenneRigidity.mersenne_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]" verification.log
