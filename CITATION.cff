@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this work when using the manuscript or formalization."
+type: software
+title: "A 2-adic rigidity theorem for complementary divisors of Mersenne numbers"
+authors:
+  - family-names: Niwa
+    given-names: Yuto
+repository-code: "https://github.com/k8-glitch/mersenne-rigidity"
+url: "https://github.com/k8-glitch/mersenne-rigidity"
+date-released: 2026-11-22
+license:
+  - MIT
+  - CC-BY-4.0
+abstract: "Manuscript and Lean formalization of a 2-adic rigidity theorem for complementary divisors of prime-index Mersenne numbers. ChatGPT generated nearly all of the manuscript and formalization. See README.md for license scopes."

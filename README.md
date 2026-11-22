@@ -28,3 +28,15 @@ The script checks out mathlib v4.25.2 at commit `c98ae54af00eaefe79c51b2b278361c
 ```text
 'MersenneRigidity.mersenne_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
 ```
+
+## License and reuse
+
+The Lean formalization, verification script, and repository documentation are available under the [MIT License](LICENSE). The manuscript PDF and LaTeX source in `paper/` are available under [CC BY 4.0](paper/LICENSE), with [attribution details](paper/NOTICE.md). These permissions apply to the extent Yuto Niwa holds applicable rights. Dependencies and third-party materials retain their own licenses.
+
+Both licenses permit commercial reuse. Preserve the required notices when reusing code. For manuscript reuse, credit the author, link to the license, and identify modifications.
+
+## Citation and feedback
+
+Citation metadata is provided in [CITATION.cff](CITATION.cff). For a reproducible reference to the formalization, also record the commit SHA you used.
+
+Please report mathematical errors, reproduction failures, or relevant prior work through [GitHub Issues](https://github.com/k8-glitch/mersenne-rigidity/issues), with the theorem or file location and supporting details. Proposed corrections can be submitted as pull requests. Contributions should use the license applicable to the edited files, and substantial AI assistance should be disclosed.
