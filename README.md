@@ -13,7 +13,7 @@ The exceptional pair occurs at $t=3$. Indeed, $89\cdot23=2047=2^{11}-1$, and $8$
 - [Manuscript (PDF)](paper/Mersenne-Rigidity.pdf)
 - [Manuscript (LaTeX)](paper/main.tex)
 - [Formal proof (Lean 4)](MersenneRigidity.lean)
-- [Japanese overview](https://mersenne-rigidity-niwa.aheadboar1.chatgpt.site)
+- [Japanese overview](README.ja.md)
 
 ## Reproduce the kernel check
 
